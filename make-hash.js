@@ -8,3 +8,4 @@ if (!secret || !password) {
 }
 const hash = crypto.createHash('sha256').update(password + secret, 'utf8').digest('hex');
 console.log(hash);
+node make-hash.js "a1b2c3d4e5..." "AlicePass123!"
